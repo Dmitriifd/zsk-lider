@@ -17,7 +17,7 @@
   margin: 0 auto;
   margin-bottom: 40px;
   span {
-    color: var(--color-accent)
+    color: var(--color-accent);
   }
 }
 
@@ -25,11 +25,28 @@
   display: flex;
   padding: 0 35px;
   flex-wrap: wrap;
+
   gap: 30px;
+  @media (min-width: 768px) {
+    column-gap: 20px;
+    row-gap: 30px;
+    padding: 0;
+  }
+  @media (min-width: 1170px) {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .advantages-list__row {
   flex: 1 1 calc(50% - 30px);
+
+  @media (min-width: 768px) {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+  @media (min-width: 1170px) {
+    flex: 0 1 216px;
+  }
 }
 
 .advantages__img {

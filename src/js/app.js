@@ -17,7 +17,7 @@ window['FLS'] = false;
 // Подключение основного файла стилей
 import "../scss/style.scss";
 
-// Функционал 
+// Функционал
 import * as flsFunctions from "./files/functions.js";
 
 /* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
@@ -63,12 +63,12 @@ flsFunctions.menuInit();
 
 /*
 Модуль параллакса мышью
-Документация: 
-Сниппет (HTML): 
+Документация:
+Сниппет (HTML):
 */
 // import './libs/parallax-mouse.js'
 
-// Работа с формами 
+// Работа с формами
 
 import * as flsForms from "./files/forms/forms.js";
 
@@ -117,7 +117,7 @@ import * as flsForms from "./files/forms/forms.js";
 // import "./files/tippy.js";
 
 
-// Работа со слайдером (Swiper) 
+// Работа со слайдером (Swiper)
 
 /*
 Настройка подключения плагина слайдера Swiper и новых слайдеров выполняется в файле js/files/sliders.js
@@ -126,16 +126,16 @@ import * as flsForms from "./files/forms/forms.js";
 Сниппет(HTML): swiper
 */
 
-// import "./files/sliders.js";
+import "./files/sliders.js";
 
 
-// Модули работы с прокруткой страницы 
+// Модули работы с прокруткой страницы
 
 /*
 Изменение дизайна скроллбара
 Документация по работе в шаблоне: В HTML добавляем к блоку атрибут data-simplebar
 Документация плагина: https://github.com/Grsmto/simplebar/tree/master/packages/simplebar
-Сниппет(HTML): 
+Сниппет(HTML):
 */
 // import './files/scroll/simplebar.js';
 
@@ -165,16 +165,16 @@ import * as flsScroll from "./files/scroll/scroll.js";
 // flsScroll.stickyBlock();
 
 
-// Галерея 
+// Галерея
 /*
-Документация по работе в шаблоне: 
+Документация по работе в шаблоне:
 Документация плагина: https://www.lightgalleryjs.com/docs/
 Сниппет(HTML):
 */
 // import "./files/gallery.js";
 
 
-// Прочие плагины 
+// Прочие плагины
 
 /* Динамический адаптив */
 // Документация: https://template.fls.guru/template-docs/dinamicheskij-adaptiv.html
@@ -184,7 +184,7 @@ import * as flsScroll from "./files/scroll/scroll.js";
 /* Форматирование чисел */
 // import './libs/wNumb.min.js';
 
-// Прочее 
+// Прочее
 
 /* Подключаем файлы со своим кодом */
 import "./files/script.js";
