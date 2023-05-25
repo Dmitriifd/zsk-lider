@@ -1,0 +1,53 @@
+.color-chooser {
+  display: flex;
+}
+
+.color-chooser__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  border-radius: 4px;
+  background-color: #262827;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: initial;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.color-chooser__item::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  box-sizing: border-box;
+  width: calc(30px + 5px * 2);
+  height: calc(30px + 5px * 2);
+  background-color: inherit;
+}
+
+.color-chooser__item::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  box-sizing: border-box;
+  width: calc(30px + 5px * 2);
+  height: calc(30px + 5px * 2);
+  border: 5px solid #ffffff;
+}
+
+.color-chooser__item:checked::after {
+  top: -4px;
+  left: -4px;
+  width: calc(30px + 4px * 2);
+  height: calc(30px + 4px * 2);
+  border: 4px solid #ffffff;
+}
+
+.color-chooser__item:not(:last-child) {
+  margin-right: 18px;
+}

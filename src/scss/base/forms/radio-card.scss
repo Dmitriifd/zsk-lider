@@ -1,0 +1,89 @@
+.cards__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.cards__wrapper > * {
+    flex-shrink: 0;
+}
+
+.cards__wrapper + * {
+    margin-top: 30px;
+}
+
+.card {
+    background: #FFFFFF;
+    border: 1px solid #C1C1C1;
+    border-radius: 4px;
+    width: 200px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 0.2s ease-in;
+
+    &:hover {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)
+    }
+}
+
+.card__header {
+    padding: 4px 10px;
+    height: 55px;
+    border-bottom: 1px solid #c1c1c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__body {
+    padding: 20px 35px;
+    // border: 1px solid #4486FB;
+
+    p {
+        font-size: 16px;
+        line-height: 120%;
+
+        text-align: center;
+        color: #000000;
+    }
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.card__title + * {
+    margin-top: 7px;
+}
+
+.card__icon {
+    fill: black;
+}
+
+.radio-select {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    padding-left: 20px;
+}
+
+.radio-select:checked + .card,
+.radio-select:checked + .card .card__header {
+    border-color: #4486FB;
+}
+
+.radio-select:checked + .card .card__icon {
+    fill: #4486FB;
+}

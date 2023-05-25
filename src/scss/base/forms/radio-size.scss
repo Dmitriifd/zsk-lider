@@ -1,0 +1,35 @@
+.size-chooser {
+	display: flex;
+}
+
+.size-chooser__label {
+	box-sizing: border-box;
+	width: 61px;
+	height: 29px;
+	transition: border-color 0.2s ease-in-out 0s;
+	border: 1px solid rgba(0, 21, 36, 0.1);
+	border-radius: 4px;
+	color: #001524;
+	font-family: 'M PLUS 1p', 'Nimbus Sans L', 'Helvetica', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: calc(29px - 1px * 2);
+	text-align: center;
+	cursor: pointer;
+}
+
+.size-chooser__label:not(:last-child) {
+	margin-right: 15px;
+}
+
+.size-chooser__label:hover {
+	transition: border-color 0.2s ease-in-out 0s;
+	border-color: #001524;
+}
+
+.size-chooser__item {
+	display: none;
+}
+
+.size-chooser__item:checked + .size-chooser__label {
+	border-color: #001524;
+}
