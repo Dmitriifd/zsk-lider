@@ -1,0 +1,40 @@
+.request {
+  min-height: 635px;
+  background-color: var(--color-accent);
+  background-image: url('../../img/removebg-preview.png');
+  background-position: center 0;
+  background-size: 291px;
+  background-repeat: no-repeat;
+  padding: 5px 35px;
+}
+.request__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 33px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.request__text {
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+.request__button {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  padding: 13px 19px;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.request__wrapper {
+  padding-top: 285px;
+  max-width: 325px;
+  margin: 0 auto;
+}
