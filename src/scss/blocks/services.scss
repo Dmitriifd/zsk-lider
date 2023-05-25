@@ -1,0 +1,81 @@
+.services {
+  padding: 0 35px;
+}
+
+.services__head {
+  margin-bottom: 30px;
+}
+
+.services__title {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.services__text {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--color-accent);
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-bottom: 35px;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  border: 2px solid transparent;
+  transition: border 0.2s ease-in-out;
+
+  @media (any-hover: hover) {
+    &:hover {
+      border: 2px solid var(--color-accent);
+    }
+  }
+}
+
+.services__item-img {
+  img {
+    max-width: 100%;
+  }
+}
+
+.services__item-title {
+  flex: 1 1 auto;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 15px 5px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+}
+
+.services__blockquote {
+  position: relative;
+  font-size: 14px;
+
+  p {
+    color: var(--color-text);
+    margin-bottom: 15px;
+
+    u {
+      color: var(--color-accent);
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -26px;
+    left: -26px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../img/icons/bq.svg');
+    background-repeat: no-repeat;
+  }
+}
