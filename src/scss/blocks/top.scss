@@ -1,0 +1,79 @@
+.top {
+  min-height: 374px;
+  background-image: url('../../img/bg-mobile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      6.52deg,
+      rgba(156, 46, 41, 0.34) 6.92%,
+      rgba(156, 46, 41, 0.1224) 61%
+    );
+  }
+}
+
+.top__container {
+}
+
+.top__title {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-mont);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+  padding-top: 100px;
+  padding-left: 80px;
+  padding-bottom: 70px;
+  max-width: calc(247px + 80px);
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 75px;
+    transform: skew(15deg);
+    width: 278px;
+    height: 374px;
+    background: rgba(156, 46, 41, 0.7);
+    z-index: -1;
+  }
+}
+
+.top__link {
+  position: relative;
+  z-index: 2;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-white);
+  margin-left: 200px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -28px;
+    right: -60px;
+    background-image: url('../../img/icons/ellipse.svg');
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('../../img/icons/arrow.svg');
+    background-repeat: no-repeat;
+    width: 134px;
+    height: 16px;
+    top: 9px;
+    left: -30px;
+  }
+}
