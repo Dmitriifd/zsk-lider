@@ -60,12 +60,13 @@
 
 .info-about {
   margin-top: 60px;
-  margin-bottom: 35px;
+  margin-bottom: 173px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 433px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.34)), url('../../img/about-bg.jpg');
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.34)),
+    url('../../img/about-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -78,3 +79,54 @@
   color: white;
 }
 
+.info-documentation {
+  margin-bottom: 134px;
+}
+.info-documentation__container {
+  padding: 0 50px;
+}
+.info-documentation__decor {
+  position: relative;
+  margin-left: auto;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 143px;
+
+
+  p{
+    max-width: 300px;
+    margin-left: 20px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -142px;
+    right: 0;
+    width: 221px;
+    height: 332px;
+    background-image: url('../../img/icons/decor-tablet.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}
+.info-documentation__text {
+  max-width: 317px;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+.info-documentation__button {
+  display: block;
+  margin-left: auto;
+  padding: 13px 23px;
+  background: #9c2e29;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
