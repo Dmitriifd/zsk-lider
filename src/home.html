@@ -180,46 +180,61 @@
           <div class="request__container">
             <div class="request__wrapper">
               <h2 class="request__title">Забота о вашем доме</h2>
-            <div class="request__text">
-              <p>
-                Мы с заботой подходим к вашим задачам. Более чем 10 лет мы
-                занимаемся строительством, ремонтом и обслуживанием
-                многоквартирных домов.
-              </p>
+              <div class="request__text">
+                <p>
+                  Мы с заботой подходим к вашим задачам. Более чем 10 лет мы
+                  занимаемся строительством, ремонтом и обслуживанием
+                  многоквартирных домов.
+                </p>
 
-              <p>
-                Наши менеджеры помогут подобрать подходящее решение под ваши
-                любые запросы. Это может быть и задача по локальному ремонту, а
-                можем - и строительство здания.
-              </p>
-            </div>
-            <button class="request__button">
-              Оставить заявку
-            </button>
+                <p>
+                  Наши менеджеры помогут подобрать подходящее решение под ваши
+                  любые запросы. Это может быть и задача по локальному ремонту,
+                  а можем - и строительство здания.
+                </p>
+              </div>
+              <button class="request__button">Оставить заявку</button>
             </div>
           </div>
         </section>
         <section class="info">
           <div class="info__container">
-            <h2 class="info__title"><span>«ЖСК Лидер»</span> экономит ваши время и деньги</h2>
+            <h2 class="info__title">
+              <span>«ЖСК Лидер»</span> экономит ваши время и деньги
+            </h2>
             <ul class="info__list">
               <li class="info__item">
                 <div class="info__item-top">
-                  <img class="info__item-img" src="img/icons/advantages-icon-5.svg" alt="">
+                  <img
+                    class="info__item-img"
+                    src="img/icons/advantages-icon-5.svg"
+                    alt=""
+                  />
                   <h3 class="info__item-title">Страхование дома</h3>
                 </div>
                 <div class="info__item-body">
-                  <p class="info__item-text">Это возможность получить бесплатные консультации по вопросам страхования и оформить страховой полис на свой дом сроко...</p>
+                  <p class="info__item-text">
+                    Это возможность получить бесплатные консультации по вопросам
+                    страхования и оформить страховой полис на свой дом сроко...
+                  </p>
                   <a href="#" class="info__item-link">ПОДРОБНЕЕ ...</a>
                 </div>
               </li>
               <li class="info__item">
                 <div class="info__item-top">
-                  <img class="info__item-img" src="img/icons/advantages-icon-6.svg" alt="">
+                  <img
+                    class="info__item-img"
+                    src="img/icons/advantages-icon-6.svg"
+                    alt=""
+                  />
                   <h3 class="info__item-title">Кредит на дома</h3>
                 </div>
                 <div class="info__item-body">
-                  <p class="info__item-text">Вам больше не нужно обращаться в несколько банков, тратить свое время, пытаясь разобраться в условиях кредитных программ...</p>
+                  <p class="info__item-text">
+                    Вам больше не нужно обращаться в несколько банков, тратить
+                    свое время, пытаясь разобраться в условиях кредитных
+                    программ...
+                  </p>
                   <a href="#" class="info__item-link">ПОДРОБНЕЕ ...</a>
                 </div>
               </li>
@@ -232,14 +247,73 @@
             <div class="info-documentation__container">
               <div class="info-documentation__decor">
                 <p>
-                  Если у вас есть техническое задание, мы можем сразу сделать просчет по стоимости и назвать примерные сроки!
+                  Если у вас есть техническое задание, мы можем сразу сделать
+                  просчет по стоимости и назвать примерные сроки!
                 </p>
               </div>
               <p class="info-documentation__text">
-                ЖСК Лидер воплотит в жизнь ваши задачи. Для вашего удоства вы можете сразу приложить имеющуюся документацию
+                ЖСК Лидер воплотит в жизнь ваши задачи. Для вашего удоства вы
+                можете сразу приложить имеющуюся документацию
               </p>
-              <button class="info-documentation__button">Приложить документацию</button>
+              <button class="info-documentation__button">
+                Приложить документацию
+              </button>
             </div>
+          </div>
+        </section>
+        <section class="order">
+          <div class="order__container">
+            <h2 class="order__title">Заказать звонок</h2>
+            <form class="order__form">
+              <fieldset class="order__form-group">
+                <input type="text" name="name" placeholder="Имя" />
+              </fieldset>
+              <fieldset class="order__form-group">
+                <input type="text" name="phone" placeholder="Телефон" />
+              </fieldset>
+              <fieldset class="order__form-group">
+                <input type="text" name="city" placeholder="Город" />
+              </fieldset>
+              <fieldset class="order__form-group">
+                <input type="date" name="date" placeholder="Дата" />
+                <select>
+                  <option disabled selected>Время</option>
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>12:00</option>
+                </select>
+              </fieldset>
+              <fieldset class="order__form-group file-upload">
+                <input
+                  class="file-upload__input"
+                  type="file"
+                  name="myFile[]"
+                  id="myFile"
+                  multiple
+                />
+                <button class="file-upload__button" type="button">
+                  <img src="img/icons/plus-icon.svg" alt="" />
+                  Прикрепить файл
+                </button>
+                <span class="file-upload__label"></span>
+              </fieldset>
+
+              <p class="order__form-text">
+                <b>Внимание!</b> Все поля обязательны для заполнения. Отправляя
+                форму, вы соглашаетесь с
+                <a href="#">Политикой обработки данных</a>
+              </p>
+
+              <button class="order__form-button" type="submit">Показать</button>
+
+              <!-- <label for="add-review-user-photos">Прикрепить фото</label>
+              <input
+                type="file"
+                id="add-review-user-photos"
+                name="add-review-user-photos"
+                accept=".jpg, .jpeg, .png"
+              /> -->
+            </form>
           </div>
         </section>
       </main>
