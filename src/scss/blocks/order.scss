@@ -11,6 +11,12 @@
   font-size: 25px;
   line-height: 33px;
   margin-bottom: 35px;
+
+  @media (min-width: 1000px) {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 55px;
+  }
 }
 
 .order__form-group {
@@ -37,6 +43,13 @@
   }
 }
 
+.order__form {
+  @media (min-width: 1000px) {
+    margin: 0 auto;
+    max-width: 640px;
+  }
+}
+
 .order__form-text {
   font-size: 14px;
   line-height: 18px;
@@ -58,16 +71,21 @@
   color: #ffffff;
   padding: 13px 35px;
   width: 240px;
+
+  @media (min-width: 1000px) {
+      min-width: 270px;
+  }
 }
 
 .file-upload {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border: 1px dashed #000000;
   padding: 28px 30px;
   width: 380px;
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
