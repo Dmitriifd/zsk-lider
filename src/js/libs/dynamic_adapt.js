@@ -98,7 +98,7 @@ DynamicAdapt.prototype.indexInParent = function (parent, element) {
 	const array = Array.prototype.slice.call(parent.children);
 	return Array.prototype.indexOf.call(array, element);
 };
-// Функция сортировки массива по breakpoint и place 
+// Функция сортировки массива по breakpoint и place
 // по возрастанию для this.type = min
 // по убыванию для this.type = max
 DynamicAdapt.prototype.arraySort = function (arr) {
@@ -145,5 +145,5 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 		return;
 	}
 };
-const da = new DynamicAdapt("max");
+const da = new DynamicAdapt("min");
 da.init();

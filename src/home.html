@@ -5,12 +5,15 @@
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
+        <div class="top__head-container">
+          <div class="top__head"></div>
+        </div>
         <section class="top">
           <div class="top__container">
-            <h1 class="top__title">
-              Строим, ремонтируем и обслуживаем жилые многоквартирные дома
+            <h1 class="top__title" data-da=".top__head, 1000, 1">
+              Строим, ремонтируем и обслуживаем <span>жилые многоквартирные дома</span>
             </h1>
-            <a href="#" class="top__link">Оставить заявку</a>
+            <a href="#" class="top__link" data-da=".top__head, 1000, 2">Оставить заявку</a>
           </div>
         </section>
         <section class="advantages">

@@ -15,6 +15,19 @@
       rgba(156, 46, 41, 0.1224) 61%
     );
   }
+
+  @media (min-width: 768px) {
+    min-height: 487px;
+    background-image: url('../../img/bg-tablet.jpg');
+  }
+  @media (min-width: 1000px) {
+    min-height: 600px;
+    background-image: url('../../img/bg-laptop.jpg');
+  }
+  @media (min-width: 1170px) {
+    min-height: 726px;
+    background-image: url('../../img/bg-desktop.jpg');
+  }
 }
 
 .top__container {
@@ -33,6 +46,31 @@
   padding-bottom: 70px;
   max-width: calc(247px + 80px);
 
+  @media (min-width: 768px) {
+    max-width: 500px;
+    font-size: 25px;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 0;
+    max-width: 666px;
+    color: #000000;
+    padding-bottom: 80px;
+
+    span {
+      color: var(--color-accent);
+    }
+  }
+
+  @media (min-width: 1170px) {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 43px;
+    max-width: 900px;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -43,6 +81,17 @@
     height: 374px;
     background: rgba(156, 46, 41, 0.7);
     z-index: -1;
+
+    @media (min-width: 768px) {
+      width: 400px;
+      min-height: 487px;
+    }
+    @media (min-width: 1000px) {
+      display: none;
+    }
+    @media (min-width: 1170px) {
+      // min-height: 726px;
+    }
   }
 }
 
@@ -64,6 +113,14 @@
     background-repeat: no-repeat;
     width: 110px;
     height: 110px;
+
+    @media (min-width: 1000px) {
+      background-image: url('../../img/icons/ellipse-bg.svg');
+    }
+    @media (min-width: 1170px) {
+      top: -25px;
+      right: -43px;
+    }
   }
 
   &::after {
@@ -75,5 +132,45 @@
     height: 16px;
     top: 9px;
     left: -30px;
+    @media (min-width: 1000px) {
+      background-image: url('../../img/icons/arrow-bg.svg');
+    }
+    @media (min-width: 1170px) {
+      width: 156px;
+      top: 15px;
+      left: -16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 300px;
+  }
+  @media (min-width: 1000px) {
+    color: #000000;
+    margin: 0;
+    position: absolute;
+    right: 60px;
+    bottom: 80px;
+  }
+  @media (min-width: 1170px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.top__head {
+  @media (min-width: 1000px) {
+    position: relative;
+    display: flex;
+  }
+}
+
+.top__head-container {
+  padding: 0 50px;
+
+  @media (min-width: 1170px) {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
