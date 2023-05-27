@@ -10,6 +10,10 @@
     background-color: #fff;
     margin-left: 45px;
   }
+  @media (min-width: 1170px) {
+    margin-left: 135px;
+    padding: 0;
+  }
 }
 
 .header__city {
@@ -43,10 +47,16 @@
     justify-content: flex-start;
     column-gap: 48px;
   }
+  @media (min-width: 1170px) {
+    gap: 0;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
-  padding-left: 35px;
+  @media (max-width: 1170px) {
+    padding-left: 35px;
+  }
 }
 
 .menu__body {
