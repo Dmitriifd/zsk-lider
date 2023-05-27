@@ -1,4 +1,7 @@
 .request {
+  background-color: var(--color-accent);
+}
+.request__container {
   min-height: 635px;
   background-color: var(--color-accent);
   background-image: url('../../img/removebg-preview.png');
@@ -6,6 +9,25 @@
   background-size: 291px;
   background-repeat: no-repeat;
   padding: 5px 35px;
+
+  @media (min-width: 768px) {
+    min-height: 448px;
+    background-position: 45px;
+  }
+
+  @media (min-width: 1000px) {
+    min-height: 590px;
+    background-size: 418px;
+    background-position: 30px 50px;
+    padding: 0;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1170px) {
+    background-size: 540px;
+    background-position: 0px 30px;
+    padding-right: 70px;
+  }
 }
 .request__title {
   font-weight: 700;
@@ -13,6 +35,12 @@
   line-height: 33px;
   color: #ffffff;
   margin-bottom: 10px;
+
+  @media (min-width: 1000px) {
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 34px;
+  }
 }
 .request__text {
   p {
@@ -20,6 +48,14 @@
     line-height: 18px;
     color: #ffffff;
     margin-bottom: 20px;
+    @media (min-width: 1000px) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    margin-bottom: 35px;
   }
 }
 .request__button {
@@ -31,10 +67,30 @@
   color: #fff;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: 1000px) {
+    font-size: 18px;
+    line-height: 23px;
+    min-width: 233px;
+    padding: 13px 25px;
+    margin: 0;
+  }
 }
 
 .request__wrapper {
   padding-top: 285px;
   max-width: 325px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding-top: 87px;
+    margin: 0;
+    margin-left: auto;
+  }
+  @media (min-width: 840px) {
+    max-width: 400px;
+  }
+  @media (min-width: 1000px) {
+    max-width: 485px;
+  }
 }
