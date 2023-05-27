@@ -74,6 +74,13 @@
     }
   }
 
+  ul li {
+    transition: color .2s ease-in-out;
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
   ul li a {
     @media (min-width: 1170px) {
       font-size: 18px;
@@ -133,6 +140,13 @@
   grid-row: 2 / -5;
   align-self: flex-end;
   gap: 10px;
+
+  li {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
 
   @media (min-width: 768px) {
     justify-self: end;
