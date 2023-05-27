@@ -11,6 +11,20 @@
   font-size: 20px;
   line-height: 26px;
   margin-bottom: 5px;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+    line-height: 33px;
+    margin-bottom: 12px;
+  }
+  @media (min-width: 1000px) {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  @media (min-width: 1170px) {
+    font-size: 40px;
+    line-height: 52px;
+  }
 }
 
 .services__text {
@@ -18,6 +32,19 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--color-accent);
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media (min-width: 1000px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  @media (min-width: 1170px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 .services__list {
@@ -29,6 +56,7 @@
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 80px;
   }
 }
 
@@ -64,9 +92,20 @@
   position: relative;
   font-size: 14px;
 
+  @media (min-width: 1170px) {
+    margin-top: 70px;
+    margin-left: 70px;
+  }
+
   p {
     color: var(--color-text);
     margin-bottom: 15px;
+
+    @media (min-width: 1170px) {
+      max-width: 527px;
+      font-size: 18px;
+      line-height: 23px;
+    }
 
     u {
       color: var(--color-accent);
@@ -83,4 +122,8 @@
     background-image: url('../../img/icons/bq.svg');
     background-repeat: no-repeat;
   }
+}
+
+.services__item.blockquote {
+  grid-column: span 2;
 }
