@@ -5,6 +5,7 @@
 	"author": "FLS",
 	"private": true,
 	"license": "",
+	"homepage": "https://dmitriifd.github.io/zsk-lider/",
 	"type": "module",
 	"scripts": {
 		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
@@ -15,7 +16,9 @@
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
-		"bem": "fls-bemtree-from-html"
+		"bem": "fls-bemtree-from-html",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "latest",
@@ -23,6 +26,7 @@
 		"del": "latest",
 		"file-include-webpack-plugin-replace": "latest",
 		"fls-bemtree-from-html": "^1.0.0",
+		"gh-pages": "^5.0.0",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
