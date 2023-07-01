@@ -14,9 +14,7 @@
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
-		"bem": "fls-bemtree-from-html",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"bem": "fls-bemtree-from-html"
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "latest",
@@ -25,7 +23,7 @@
 		"file-include-webpack-plugin-replace": "latest",
 		"fls-bemtree-from-html": "^1.0.0",
 		"gh-pages": "^5.0.0",
-		"gulp": "latest",
+		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
 		"gulp-fonter-fix": "latest",
@@ -33,7 +31,6 @@
 		"gulp-if": "latest",
 		"gulp-imagemin": "latest",
 		"gulp-newer": "latest",
-		"gulp-notify": "latest",
 		"gulp-plumber": "latest",
 		"gulp-prettier": "latest",
 		"gulp-rename": "latest",
