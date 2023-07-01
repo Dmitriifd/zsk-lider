@@ -4,7 +4,6 @@
 	"description": "Start template with Gulp and Webpack",
 	"author": "FLS",
 	"private": true,
-	"license": "",
 	"homepage": "https://dmitriifd.github.io/zsk-lider/",
 	"type": "module",
 	"scripts": {
@@ -12,13 +11,12 @@
 		"build": "gulp build --build",
 		"sprite": "gulp sprite",
 		"fonts": "gulp fonts --rewrite",
-		"deploy": "gulp deployFTP --build",
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
 		"bem": "fls-bemtree-from-html",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
+		"deploy": "gh-pages -d build"
 	},
 	"devDependencies": {
 		"copy-webpack-plugin": "latest",
